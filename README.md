@@ -10,3 +10,8 @@ These 52 objects, called "Earths", are part of an array called "multiverse".
 Users are asked to give an int value ranging from 0 to 51.
 The program will then call a method that applies the properties of the object with that value for its multiverse index.
 There are no comments, but the code is fairly straightforward, so it's practically self-documenting.
+
+# Why do some many of the project files say "Version 2.0"? Where's Version 1.0?
+Version 1.0 was created a while ago, and will not be uploaded to GitHub.
+Version 1.0 consisted of WAY too many conditional statements, and was nearly 4,000 lines long.
+This version is much more streamlined, as it is under 300 lines long.
