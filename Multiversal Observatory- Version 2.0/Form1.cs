@@ -32,8 +32,8 @@ namespace Multiversal_Observatory__Version_2._0
             multiverse[0] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._00, "Earth-0, also known as New Earth, is the foundation stone of the Multiversal structure. It has survived several attacks, surgeries, and reconstructions, on the way to its current form. On Earth-0, the greatest young superheroes of the age are at the peak and pinnacle of their powers and achievements.");
             multiverse[1] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._01, "This freshly created universe is still cooling and as yet unformed. Earth-1's known superbeings- Superman, Batman, Wonder Woman, and the Teen Titans- are at the beginning of their careers. Time and space are still pliable, and nothing here is certain.");
             multiverse[2] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._02, "Following the deaths of Superman, Batman, and Wonder Woman in the war with the Great and Terrible Darkseid, a new generation of superheroes has emerged to continue the fight against immortal evil. This world includes a new Batman and Superman, Red Tornado, Doctor Fate, Flash, Green Lantern, Hawkgirl, Huntress, and Power Girl.");
-            multiverse[3] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._03, "This world is home to the villainous, despotic Crime Syndicate of America, including their leader, the tyrant Ultraman, and his cohorts Johnny Quick, Power Ring, Deathstorm, and Atomica- the world's great super-criminals in this universe, where good and evil are reversed.");
-            multiverse[4] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._04, "Earth-4's only superhuman being is Captain Allen Adam, endowed with quantum senses following close-quarters interactions with an unstable neo-element known as U-235. The Pax Americana is a group of specialized, uniformed, peacekeeping operatives including Peacemaker, Blue Beetle, and Nightshade. The Question of this world is a rogue crimebuster.");
+            multiverse[3] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._03, "This world is home to the villainous, despotic Crime Syndicate of America, including their leader, the tyrant Ultraman, and his cohorts Owlman, Superwoman, Johnny Quick, Power Ring, Deathstorm, and Atomica- the world's great super-criminals in this universe, where good and evil are reversed.");
+            multiverse[4] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._04, "Earth-4's only superhuman being is Captain Allen Adam, endowed with quantum senses following a close-quarters interaction with an unstable neo-element known as U-235. The Pax Americana is a group of specialized, uniformed, peacekeeping operatives including Peacemaker, Blue Beetle, and Nightshade. The Question of this world is a rogue crimebuster.");
             multiverse[5] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._05, "Known throughout the Multiverse as Thunderworld, this universe is the home of the Marvel Family paragons, their friends, and their foes. Captain Marvel, Captain Marvel Jr., Mary Marvel, and the Lieutenant Marvels fight an eternal battle to protect their world from monsters, aliens, and the machinations of the power-mad genius Doctor Sivana.");
             multiverse[6] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._06, "The happening home of Aquaman, Sandman, Batman, Green Lantern, and other familiar names, given new and unfamiliar stories! On this world, Superman is a castaway cosmic cop from the planet Krypton. Wonder Woman wields the senses-sundering celestial staff of Manco Capac, the Inca Sun God; while the glistening Green Lantern channels the peerless power of the wonderous World Tree Yggdrasil against the villainous Reverend Darrk!");
             multiverse[7] = new Earth(Multiversal_Observatory__Version_2._0.Properties.Resources._07, "On this world, the history of Earth-8 was recreated with subtle differences. In spite of its innovations and the protection of heroes like Crusader, Golem, Doc Future, Walkure, Devilfist, and Microbot, Earth-7 was targeted and destroyed by the rapacious demons of the Gentry as part of their first incursion into the Multiverse. The sole survivor of Earth-7 is Thunderer, an incarnate storm god.");
@@ -93,11 +93,42 @@ namespace Multiversal_Observatory__Version_2._0
             MessageBox.Show("Credits to Grant Morrison's 'The Multiversity: Guidebook' for the descriptions and illustrations.");
         }
 
+        public void disable()
+        {
+            addZero.Enabled = false;
+            addOne.Enabled = false;
+            addTwo.Enabled = false;
+            addThree.Enabled = false;
+            addFour.Enabled = false;
+            addFive.Enabled = false;
+            addSix.Enabled = false;
+            addSeven.Enabled = false;
+            addEight.Enabled = false;
+            addNine.Enabled = false;
+            goTo.Enabled = true;
+        }
+
+        public void enable()
+        {
+            addZero.Enabled = true;
+            addOne.Enabled = true;
+            addTwo.Enabled = true;
+            addThree.Enabled = true;
+            addFour.Enabled = true;
+            addFive.Enabled = true;
+            addSix.Enabled = true;
+            addSeven.Enabled = true;
+            addEight.Enabled = true;
+            addNine.Enabled = true;
+            goTo.Enabled = false;
+        }
+
         public void reset()
         {
             multiversalDesignate = 0;
             doubleDigits = false;
             multiversalCoordinates.Text = multiversalDesignate.ToString();
+            enable();
         }
                                        
         private void goTo_Click(object sender, EventArgs e)
@@ -125,6 +156,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 0;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -139,6 +171,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 1;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -153,6 +186,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 2;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -167,6 +201,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 3;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -181,6 +216,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 4;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -195,6 +231,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 5;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -209,6 +246,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 6;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -223,6 +261,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 7;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -237,6 +276,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 8;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
@@ -251,6 +291,7 @@ namespace Multiversal_Observatory__Version_2._0
             else
             {
                 multiversalDesignate += 9;
+                disable();
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
