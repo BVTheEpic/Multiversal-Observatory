@@ -14,7 +14,7 @@ There are no comments, but the code is fairly straightforward, so it's practical
 # Running the program
 The program was developed using Microsoft Visual Studio Express 2013, so you will need that to build the solution and run it.
 
-# Why do some many of the project files say "Version 2.0"? Where's Version 1.0?
+# Why do so many of the project files say "Version 2.0"? Where's Version 1.0?
 Version 1.0 was created a while ago, and will not be uploaded to GitHub.
 Version 1.0 consisted of WAY too many conditional statements, and was nearly 4,000 lines long.
 This version is much more streamlined, as it is under 300 lines long.
