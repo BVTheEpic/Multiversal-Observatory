@@ -55,6 +55,7 @@
             this.viewScreen.Size = new System.Drawing.Size(429, 429);
             this.viewScreen.TabIndex = 0;
             this.viewScreen.UseVisualStyleBackColor = true;
+            this.viewScreen.Click += new System.EventHandler(this.viewScreen_Click);
             // 
             // earthDescription
             // 

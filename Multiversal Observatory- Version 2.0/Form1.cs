@@ -295,5 +295,14 @@ namespace Multiversal_Observatory__Version_2._0
             }
             multiversalCoordinates.Text = multiversalDesignate.ToString();
         }
+
+        private void viewScreen_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Clicking this image will take you to a previous incarnation of the Multiverse. Press yes to continue!", "", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Form2 previousMultiverse = new Form2();
+                previousMultiverse.Show();
+            }
+        }
     }
 }
