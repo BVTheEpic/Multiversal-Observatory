@@ -17,9 +17,10 @@ namespace Multiversal_Observatory__Version_2._0
             public string EarthName { get; set; } 
             // todo: declare public Image EarthView { get; set; }
             public string EarthDescription { get; set; }
-            public Earth(string earthName, string earthDescription)
+            public Earth(string earthName, string earthDescription) //todo: add argument string earthView
             {
                 EarthName = earthName;
+                //EarthView = earthView;
                 EarthDescription = earthDescription;
             }
         }
@@ -29,6 +30,7 @@ namespace Multiversal_Observatory__Version_2._0
         public void createMultiverse()
         {
             //note: Form2 displays pre-Flashpoint multiverse
+            //todo: update descriptions
             //todo: "trim the fat" and remove any universes without substantial information
 
             Earth earth0 = new Earth("Earth-0", "New Earth; contains Justice League of America");
@@ -142,7 +144,7 @@ namespace Multiversal_Observatory__Version_2._0
             Earth earth51 = new Earth("Earth-51", "destroyed by Superman-Prime");
             multiverse.Add(earth51);
             
-            multiversalOrrery.Text = "LIST OF EARTHS:";
+            multiversalOrrery.Text = "\bList of Earths:\b0";
             for (int i = 0; i < multiverse.Count; i++)
             {
                 multiversalOrrery.Text += "\n" + multiverse[i].EarthName;
