@@ -15,6 +15,7 @@ namespace Multiversal_Observatory__Version_2._0
         public class Earth
         {
             public string EarthName { get; set; } 
+            // todo: declare public Image EarthView { get; set; }
             public string EarthDescription { get; set; }
             public Earth(string earthName, string earthDescription)
             {
@@ -48,7 +49,7 @@ namespace Multiversal_Observatory__Version_2._0
             Earth earth6 = new Earth("Earth-6", "contains Marvel Comics analogues");
             multiverse.Add(earth6);
 
-            Earth earth7 = new Earth("Earth-7", "contains Courtney Whitmore/Starwoman");
+            Earth earth7 = new Earth("Earth-7", "contains Courtney Whitmore/Starwoman"); // may remove this one
             multiverse.Add(earth7);
 
             Earth earth8 = new Earth("Earth-8", "contains Lord Havok and the Extremists");
@@ -66,10 +67,10 @@ namespace Multiversal_Observatory__Version_2._0
             Earth earth12 = new Earth("Earth-12", "Batman Beyond universe");
             multiverse.Add(earth12);
 
-            Earth earth13 = new Earth("Earth-13", "dark/arcane universe");
+            Earth earth13 = new Earth("Earth-13", "dark/arcane universe"); // may remove this one
             multiverse.Add(earth13);
 
-            Earth earth15 = new Earth("Earth-15", "utopian world destroyed by Superboy Prime");
+            Earth earth15 = new Earth("Earth-15", "utopian world destroyed by Superboy Prime"); // may remove this one, but not as likely
             multiverse.Add(earth15);
 
             Earth earth16 = new Earth("Earth-16", "Young Justice universe");
@@ -104,7 +105,7 @@ namespace Multiversal_Observatory__Version_2._0
 
         private void viewScreen_Click(object sender, EventArgs e)
         {
-            // will eventually lead to third Multiverse form
+            // will eventually lead to third Multiverse form... pre-Crisis confirmed for v3.0?
         }
     }
 }
